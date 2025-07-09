@@ -26,7 +26,7 @@ import NotificationPage from './component/Notification.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter basename="/vistora_cus/">
+    <BrowserRouter basename="/vistora_customer/">
       <ScrollToTop />
       <LogoutProvider>
         <Routes>

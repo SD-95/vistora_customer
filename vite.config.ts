@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/vistora_cus/', // ✅ for deployment in a subfolder
+  base: '/vistora_customer/', // ✅ for deployment in a subfolder
   plugins: [react()],
   server: {
     proxy: {
