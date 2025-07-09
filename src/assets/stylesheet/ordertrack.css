@@ -1,0 +1,201 @@
+/* Container & Layout */
+.ordertrack-container {
+  /* background-color: #f1f3f6; */
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+/* Main Card */
+.ordertrack-card {
+  border-radius: 12px;
+  border: none;
+  padding: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+/* Shared Badge */
+.shared-badge {
+  background-color: #fff8e1;
+  border-left: 5px solid #fbc02d;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Product Info */
+.product-info h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.product-info .text-muted {
+  font-size: 0.9rem;
+}
+
+.product-info .price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #212121;
+}
+
+/* Delivery Note */
+.delivery-note {
+  background-color: #e3f2fd;
+  border-left: 4px solid #2196f3;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: #0d47a1;
+  margin-bottom: 1.25rem;
+}
+
+/* Timeline Styles */
+.timeline {
+  position: relative;
+  padding-left: 40px;
+  margin-top: 1rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 33px;
+  width: 3px;
+  height: var(--timeline-height, 100%);
+  background-color: #4caf50;
+  z-index: 0;
+}
+.timeline-step {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 1.75rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -12px;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border: 3px solid #4caf50;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.timeline-content {
+  margin-left: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-content h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-content small {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.4;
+  display: block;
+}
+
+/* See All Updates Link */
+.see-updates {
+  margin-top: 1rem;
+}
+
+.see-updates button {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #2874f0;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+/* Delivery Details */
+.delivery-details-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.delivery-details-card h6 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.delivery-address p {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Price Breakdown */
+.price-breakdown {
+  border-top: 1px solid #ddd;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+}
+
+.price-total {
+  font-weight: 700;
+  font-size: 1rem;
+  border-top: 1px solid #ddd;
+  padding-top: 0.5rem;
+}
+
+.amount {
+  color: #000;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .ordertrack-card {
+    padding: 1rem;
+  }
+
+  .shared-badge {
+    font-size: 0.88rem;
+  }
+
+  .product-info h5 {
+    font-size: 1rem;
+  }
+
+  .timeline {
+    padding-left: 30px;
+  }
+
+  .timeline-step h6 {
+    font-size: 0.95rem;
+  }
+
+  .delivery-details-card {
+    margin-top: 2rem;
+  }
+
+  .price-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

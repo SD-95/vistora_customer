@@ -1,0 +1,133 @@
+/* Order Page Container */
+.orderpage-container {
+  background-color: #f5f7fa;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 12px;
+  /* max-width: 100%; */
+  box-sizing: border-box;
+}
+
+/* Filter Card */
+.orderpage-filter-card {
+  border-radius: 10px;
+  border: none;
+}
+
+.orderpage-filter-card h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  /* margin-bottom: 1rem; */
+  color: #333;
+}
+
+/* Checkbox Styling */
+.orderpage-checkbox {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Search Input */
+.orderpage-searchbar {
+  max-width: 500px;
+}
+
+.orderpage-searchbar input {
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #ccc;
+}
+
+.orderpage-searchbar button {
+  border-radius: 0 8px 8px 0;
+  border: 1px solid #ccc;
+}
+
+/* Order Card */
+.orderpage-card {
+  border-radius: 12px;
+}
+
+.orderpage-card-body {
+  padding: 1.25rem;
+}
+
+.orderpage-img {
+  max-width: 100px;
+  border-radius: 8px;
+}
+
+.orderpage-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.orderpage-muted {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+.orderpage-price {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.orderpage-badge {
+  background-color: #17a2b8 !important;
+  color: #fff !important;
+  font-size: 0.85rem;
+  padding: 0.4em 0.8em;
+  border-radius: 50px;
+}
+
+/* Delivery Status */
+.orderpage-status-success {
+  font-size: 0.95rem;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.orderpage-status-warning {
+  font-size: 0.95rem;
+  color: #ffc107;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .orderpage-card-body {
+    text-align: center;
+  }
+
+  .orderpage-img {
+    margin-bottom: 1rem;
+  }
+
+  .orderpage-searchbar {
+     flex-direction: column;
+    gap: 0.5rem;
+  }
+    .orderpage-searchbar .form-control,
+  .orderpage-searchbar .btn {
+    width: 100%;
+    border-radius: 8px !important;
+  }
+
+  .orderpage-searchbar input,
+  .orderpage-searchbar button {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+    .orderpage-searchbar .btn {
+    margin-top: 0 !important;
+    border-radius: 8px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .orderpage-container {
+    margin: 1rem;
+    padding: 1.25rem;
+  }
+}

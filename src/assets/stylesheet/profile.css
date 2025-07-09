@@ -1,0 +1,583 @@
+/* General Container */
+.profile-container {
+  background-color: #f4f6f9;
+  padding: 2rem 0;
+  min-height: 100vh;
+  margin: 2rem;
+  border-radius: 10px;
+}
+
+/* Sidebar */
+.profile-sidebar {
+  margin-bottom: 1.5rem;
+}
+
+.profile-card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 1rem;
+}
+
+.sidebar-header img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.sidebar-header .text-muted {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 0.2rem;
+}
+
+.sidebar-name {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.sidebar-section {
+  padding: 0 1rem 1rem;
+}
+
+.sidebar-heading {
+  font-size: 1rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-heading svg {
+  margin-right: 0.4rem;
+}
+
+.sidebar-item {
+  display: block;
+  padding: 6px 12px;
+  margin-bottom: 4px;
+  font-size: 0.95rem;
+  color: #333;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.sidebar-item:hover {
+  background-color: #fff4f3;
+  transform: translateX(5px);
+  color: #ff6f61;
+  font-weight: 500;
+}
+
+.sidebar-item.active {
+  background-color: #fff4f3;
+  color: #ff6f61;
+  font-weight: 600;
+  transform: translateX(5px);
+  font-size: 1.02rem;
+}
+
+/* Optional: group styling for better structure */
+.sidebar-item-group {
+  margin-bottom: 1rem;
+}
+
+/* Gift balance styling */
+.sidebar-item .gift-balance {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ff6f61;
+  margin-left: auto;
+}
+
+/* Main content */
+.profile-main {
+  margin-bottom: 2rem;
+}
+
+.profile-content {
+  padding: 1.5rem;
+}
+
+.profile-section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.edit-link {
+  font-size: 0.9rem;
+  color: #007bff;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.edit-link:hover {
+  color: #0056b3;
+}
+
+.profile-field {
+  margin-bottom: 1.2rem;
+}
+
+/* Address & Payment Sections */
+.address-box {
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  padding: 1rem;
+}
+
+.address-box:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  transform: scale(1.01);
+}
+
+.address-box .form-check {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+}
+
+/* Recent searches */
+.recent-search-item {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.recent-search-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(255, 120, 102, 0.3);
+}
+
+.recent-search-item img {
+  height: 120px;
+  object-fit: cover;
+}
+
+/* Button group after address selection */
+.d-flex.gap-3.mt-3 {
+  gap: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-content {
+    padding: 1rem;
+  }
+
+  .sidebar-item {
+    font-size: 0.9rem;
+  }
+
+  .profile-section-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .sidebar-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sidebar-header img {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Logout button */
+.logout-btn {
+  border-radius: 50px;
+  padding: 0.4rem 1.25rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  justify-content: center;
+}
+
+.logout-btn:hover {
+  background-color: #ff6f61;
+  border-color: #ff6f61;
+  color: #fff;
+}
+
+.card .btn-link {
+  font-size: 0.9rem;
+  color: #007bff;
+}
+
+.card .btn-link:hover {
+  text-decoration: underline;
+}
+
+.ticket-card {
+  border: 2px dashed #ccc;
+  border-radius: 16px;
+  background: #fffefc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.ticket-card .badge {
+  font-size: 0.75rem;
+  padding: 0.35em 0.6em;
+}
+
+.ticket-card.expired {
+  background-color: #f9e3e3;
+  border-color: #f44336;
+  opacity: 0.85;
+}
+
+.ticket-card.expired .text-muted,
+.ticket-card.expired h6 {
+  color: #b52b2b !important;
+}
+
+.ticket-card:hover {
+  transform: scale(1.01);
+}
+
+/* Accordion Custom Style */
+.custom-accordion .accordion-item {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f8f9fa;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.custom-accordion .accordion-header {
+  background-color: #f0f2f5;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.custom-accordion .accordion-button {
+  background-color: transparent;
+  box-shadow: none;
+  font-weight: 600;
+  color: #333;
+  transition: background-color 0.3s ease;
+  border-radius: 0;
+}
+
+/* Gift Card Header Buttons */
+.profile-card .gift-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-card .gift-header h5 {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.profile-card .gift-header button {
+  font-size: 14px;
+  padding: 0;
+  color: #2874f0;
+  font-weight: 500;
+}
+
+/* Add Gift Card Button */
+.profile-card .gift-add-card {
+  margin-bottom: 1.5rem;
+}
+
+.profile-card .gift-add-card button {
+  font-weight: 500;
+  padding: 0.4rem 1.2rem;
+  font-size: 14px;
+}
+
+/* Gift Card Title Row */
+.profile-card .gift-title-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.profile-card .gift-title-row h5 {
+  font-weight: 600;
+}
+
+.profile-card .gift-title-row small {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Tab Styling */
+.profile-card .nav-tabs {
+  border-bottom: 2px solid #eee;
+  background: #f8f8f8;
+}
+
+.profile-card .nav-tabs .nav-link {
+  border: none;
+  color: #333;
+  font-weight: 500;
+  padding: 0.75rem 1.25rem;
+  font-size: 14px;
+}
+
+.profile-card .nav-tabs .nav-link.active {
+  border-bottom: 3px solid #2874f0;
+  color: #2874f0;
+  background: #fff;
+}
+
+/* Tab Content Background */
+.profile-card .tab-content {
+  background: linear-gradient(to right, #f4f7fa, #e5ecf5);
+  padding: 1.5rem;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Card Form Side */
+.profile-card .form-label {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.profile-card input,
+.profile-card select {
+  font-size: 14px;
+  padding: 0.5rem;
+}
+
+/* Card Preview */
+.profile-card .gift-preview {
+  background-color: #0c66ff;
+  color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.profile-card .gift-preview h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.profile-card .gift-preview img {
+  width: 60px;
+  margin-top: 1.5rem;
+}
+
+/* Buy Another Gift Card */
+.profile-card .buy-another {
+  font-weight: 500;
+  font-size: 14px;
+  color: #2874f0;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+/* Buy Final CTA Button */
+.profile-card .btn-warning {
+  background-color: #ff9f00;
+  border: none;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 0.6rem 2rem;
+  border-radius: 8px;
+}
+
+.profile-card .btn-warning:hover {
+  background-color: #fb8c00;
+}
+
+/* Gift Card Modal Styling */
+.modal-content .modal-title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.modal-content .text-muted {
+  font-size: 13px;
+}
+
+.modal-content input {
+  font-size: 14px;
+  padding: 0.5rem;
+}
+
+/* Accordion FAQ */
+.profile-card .faq-section .accordion-button {
+  font-weight: 600;
+  background-color: #f7f9fb;
+  color: #333;
+}
+
+.profile-card .faq-section .accordion-body ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+
+.profile-card .faq-section .accordion-body li {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-card .gift-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .profile-card .gift-title-row {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .profile-card .tab-content {
+    padding: 1rem;
+  }
+
+  .profile-card .gift-preview {
+    margin-top: 1.5rem;
+    max-width: 100%;
+  }
+}
+.gift-card-preview {
+  background: linear-gradient(135deg, #d3b5b2, #eb2b18);
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  height: 180px;
+  max-width: 360px;
+  box-shadow: 0 8px 20px rgba(12, 102, 255, 0.2);
+}
+
+.gift-card-preview small {
+  font-size: 12px;
+  opacity: 0.85;
+  letter-spacing: 0.5px;
+}
+
+.gift-card-preview h2 {
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+}
+
+.gift-card-preview img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.signature-style {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.add-gift-card-box {
+  border: 1px dashed #007bff;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  background-color: #f8f9fc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-gift-card-box:hover {
+  background-color: #e7f1ff;
+}
+.Vistora_Logo{
+  border-radius: 50%;
+}
+
+/* My Reviews Section */
+.profile-card .review-card {
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.review-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.review-card .fw-semibold {
+  font-size: 15px;
+  color: #212121;
+}
+
+.review-card .badge {
+  padding: 0.3rem 0.6rem;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.review-card .text-muted {
+  font-size: 14px;
+}
+
+.review-card .btn-link {
+  font-size: 14px;
+  padding: 0;
+  color: #2874f0;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.review-card .btn-link:hover {
+  text-decoration: underline;
+}
+
+.review-card .review-meta {
+  font-size: 12.5px;
+  color: #757575;
+}
+
+.review-card .review-comment {
+  font-size: 14.5px;
+  color: #424242;
+  margin-bottom: 0.25rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .review-card .btn-link {
+    font-size: 13px;
+  }
+
+  .review-card .review-comment,
+  .review-card .text-muted {
+    font-size: 13.5px;
+  }
+}

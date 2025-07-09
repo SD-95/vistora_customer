@@ -1,0 +1,80 @@
+/* FloatingCoupon.css */
+
+.floating-coupon {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 1050;
+  display: flex;
+  align-items: stretch;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Segoe UI', sans-serif;
+}
+.coupon-tab {
+  background-color: #4d2c91;
+  color: #fff;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  padding: 10px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.15);
+  flex-direction: column; 
+  justify-content: flex-start;
+}
+
+.coupon-panel {
+  background: linear-gradient(to right, #fde6e8, #fff1f1);
+  width: 300px;
+  padding: 16px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+.coupon-header {
+  position: relative;
+}
+.coupon-header h2 {
+  font-size: 24px;
+  color: #333;
+  margin: 4px 0;
+}
+.coupon-header p {
+  font-size: 13px;
+  color: #555;
+  margin: 6px 0 12px;
+}
+
+.coupon-header .btn {
+  font-size: 14px;
+  font-weight: bold;
+}
+.close-icon {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  cursor: pointer;
+  color: #333;
+}
+
+.coupon-body img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+.coupon-footer {
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  color: #444;
+  margin-top: 10px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}

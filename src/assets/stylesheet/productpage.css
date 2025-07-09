@@ -1,0 +1,200 @@
+/* Card Wrapper */
+
+.product-page{
+  margin: 2rem;
+}
+
+.product-card-wrapper {
+  position: relative;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+/* Smooth hover scaling */
+/* .product-card-wrapper:hover {
+  transform: scale(1.03);
+  z-index: 2;
+} */
+
+/* Product Card */
+.product-card {
+  overflow: hidden;
+  min-height: 100%;
+  cursor: pointer;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+/* Elevate card on hover */
+/* .product-card-wrapper:hover .product-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  z-index: 20;
+} */
+
+/* Product Image Wrapper */
+.product-img-wrapper {
+  height: 180px;
+  width: 100%;
+  overflow: hidden;
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-img-wrapper img {
+    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  transition: transform 0.4s ease;
+}
+
+.product-card-wrapper:hover .product-img-wrapper img {
+  transform: scale(1.07);
+  z-index: 0;
+}
+
+/* Wishlist Icon */
+.wishlist-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 50%;
+  padding: 0px 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Best Seller Badge */
+.best-seller-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #00a098;
+  color: white;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 12px;
+  z-index: 9;
+}
+
+/* Product Name */
+.product-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+.product-name:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+/* Subtitle */
+.product-subtitle {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Rating & Assurance */
+.rating-badge {
+  font-size: 12px;
+  padding: 4px 8px;
+  background-color: #28a745 !important;
+  border-radius: 8px;
+}
+
+.assured-badge {
+  background: #f0f7ff;
+  color: #0073e6;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Pricing Section */
+.price-section {
+  font-size: 14px;
+  margin-top: 0.5rem;
+}
+
+.price-final {
+  color: #28a745;
+  font-weight: 700;
+  margin-right: 6px;
+}
+
+.price-original {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 6px;
+}
+
+.price-discount {
+  color: #28a745;
+  font-weight: 500;
+}
+
+/* Hover Info */
+.card-hover-info {
+  margin-top: 10px;
+}
+
+.offer-text {
+  font-size: 13px;
+  color: #28a745;
+}
+
+.offer-text.text-decoration-underline {
+  cursor: pointer;
+}
+
+.variant-list {
+  font-size: 13px;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* Tooltip */
+.rating-tooltip {
+  background-color: #fff !important;
+  color: #000 !important;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.rating-tooltip .progress {
+  background-color: #eee;
+}
+
+/* .rating-tooltip .progress-bar {
+  background-color: rgb(19, 212, 103); 
+} */
+
+.rating-tooltip .text-muted,
+.rating-tooltip div {
+  color: #fff !important;
+}
+/* Filter Sidebar */
+.filter-card {
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 10px;
+}
